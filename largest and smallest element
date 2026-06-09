@@ -1,6 +1,7 @@
 # Problem: Largest and Smallest element
 # Input: n=5, array=[64, 34, 25, 12, 22]
-# Output: Largest: 64, Smallest: 12n=int(input())
+# Output: Largest: 64, Smallest: 12
+n=int(input())
 a=list(map(int,input().split()))
 min=a[0]
 max=a[0]
