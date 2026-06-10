@@ -1,0 +1,12 @@
+#to find the missing value
+# input: n=5,a=[1,2,4,5]
+# output: 3
+
+n=int(input())
+a=list(map(int,input().split()))
+sum=0
+for i in range(n-1):
+    sum+=a[i]
+m=n*(n+1)//2
+k=m-sum
+print(k)
