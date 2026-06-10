@@ -1,0 +1,14 @@
+#To check the given string is palindrome or not
+
+n=input()
+s=0
+for i in n:
+    s+=1
+for i in range(0,s):
+    b=n[i]
+for i in range(s-1,-1,-1):
+    c=n[i]
+if b==c:
+    print("Palindrome")
+else:
+    print("Not a Palindrome")
