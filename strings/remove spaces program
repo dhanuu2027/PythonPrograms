@@ -1,0 +1,8 @@
+#to remove spaces in a given string
+
+n=input()
+r=""
+for i in n:
+    if i!=" ":
+        r=r+i
+print(r)
