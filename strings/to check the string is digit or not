@@ -1,0 +1,17 @@
+#to check if the string has only digits
+
+n=input()
+s=0
+for i in n:
+    s+=1
+digit=0
+alpha=0
+for i in range(s):
+    if n[i]>='0' and n[i]<='9':
+       digit+=1
+    else:
+       alpha+=1
+if digit==s:
+    print("Yes")
+else:
+    print("No")
