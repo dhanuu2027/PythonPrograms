@@ -1,0 +1,15 @@
+#to count upper and lower case letters
+
+n=input()
+s=0
+upper=0
+lower=0
+for i in n:
+    s+=1
+for i in range(0,s):
+    if n[i]>='A' and n[i]<='Z':
+        upper+=1
+    else:
+        lower+=1
+print("Upper:",upper)
+print("Lower:",lower)
