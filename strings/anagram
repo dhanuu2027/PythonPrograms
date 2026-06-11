@@ -1,0 +1,10 @@
+#to check the given string is anagram or not
+
+n=input()
+m=input()
+n=n.replace(" ","").lower()
+m=m.replace(" ","").lower()
+if sorted(n)==sorted(m):
+    print("The strings are anagram")
+else:
+    print("The strings are not anagram")
