@@ -1,0 +1,17 @@
+#to find the most repeated character
+
+n=input()
+c={}
+for i in n:
+  if i in c:
+    c[i]+=1
+  else:
+    c[i]=1
+max_count=0
+max_char=""
+for key in c:
+  if c[key]>max_count:
+    max_count=c[key]
+    max_char=key
+print(max_char,end=" ")
+print(max_count)
