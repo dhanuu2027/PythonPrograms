@@ -1,0 +1,11 @@
+#to count words in a given string
+
+n=input()
+s=0
+for i in n:
+    s+=1
+count=0
+for i in range(0,s):
+    if n[i]==" ":
+        count+=1
+print(count+1)
