@@ -1,0 +1,16 @@
+#to find the given nuumber is strong number or not
+
+n=int(input())
+newn=n
+sum=0
+while n>0:
+    rem=n%10
+    fact=1
+    for i in range(1,rem+1):
+        fact=fact*i
+    sum+=fact
+    n=n//10
+if sum==newn:
+    print("It is a Strong Number")
+else:
+    print("It is not a Strong Number")
