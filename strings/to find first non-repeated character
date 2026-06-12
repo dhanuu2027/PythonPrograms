@@ -1,0 +1,13 @@
+#to find first non-repeated character in a given string
+
+n=input()
+c={}
+for i in n:
+    if i  in c:
+        c[i]+=1
+    else:
+        c[i]=1
+for i in n:
+    if c[i]==1:
+        print(i)
+        break
