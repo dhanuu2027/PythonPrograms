@@ -1,0 +1,13 @@
+#Longest substring without repeating characters
+
+n=input()
+c=set()
+left=0
+max_len=0
+for right in range(len(n)):
+    while n[right] in c:
+        c.remove(n[left])
+        left+=1
+    c.add(n[right])
+    max_len=max(max_len,right-left+1)
+print(max_len)
