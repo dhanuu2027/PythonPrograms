@@ -10,6 +10,6 @@ while n>0:
     n=n//10
 if negative:
     sum=-sum
-if n<-2**31 or n>2**31-1:
+if sum<-2**31 or sum>2**31-1:
     print(0)
 print(sum)
