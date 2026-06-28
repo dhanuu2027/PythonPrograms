@@ -1,0 +1,10 @@
+a=list(map(int,input().split()))
+n=len(a)
+m=a[0]
+p=0
+for i in range(n):
+    if a[i]<m:
+        m=a[i]
+    if a[i]-m>p:
+        p=a[i]-m
+print(p)
