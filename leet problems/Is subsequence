@@ -1,0 +1,14 @@
+s1=input()
+s2=input()
+result=""
+i=0
+j=0
+while j<len(s2):
+    if i<len(s1) and s1[i]==s2[j]:
+        result+=s1[i]
+        i+=1
+    j+=1
+if result==s1:
+    print("True")
+else:
+    print("False")
