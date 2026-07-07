@@ -1,0 +1,12 @@
+n=input()
+s=input()
+t=len(n)+len(s)
+result=""
+i=0
+while i<t:
+    if i<len(n):
+        result+=n[i]
+    if i<len(s):
+        result+=s[i]
+    i+=1
+print(result)
