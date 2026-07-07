@@ -1,0 +1,9 @@
+n=int(input())
+nums=list(map(int,input().split()))
+val=int(input())
+slow=0
+for fast in range(n):
+    if nums[fast]!=val:
+        nums[slow]=nums[fast]
+        slow+=1
+print(slow)
