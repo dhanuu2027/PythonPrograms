@@ -1,0 +1,23 @@
+tokens=list(map(int,input().split()))
+power=int(input())
+for i in range(len(tokens)-1):
+    for j in range(len(tokens)-1-i):
+        if tokens[j]>tokens[j+1]:
+            tokens[j],tokens[j+1]=tokens[j+1],tokens[j]
+left=0
+right=len(tokens)-1
+s=0
+m=0
+while left<=right:
+    if power>=tokens[left]:
+        power-=tokens[left]
+        s+=1
+        left+=1
+        m=max(m,s)
+    elif s>0:
+        power+=tokens[right]
+        s-=1
+        right-=1
+    else:
+        break
+print(m)
